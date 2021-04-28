@@ -4,26 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Vue.js 3 Course - Random User Generator</title>
   </head>
   <body>
     <!--+-(1-D)-This is how we Insert our Vue.js "Components" in the HTML Website:_-->
-    <div id="App1">Hello {{name}} from App1</div>
-    <div id="App2">Hello {{name}} from App2</div>
+    <div id="App1">
+      <!--+-(1-G)-Instead of passing Vue.js "props" inside HTML Tags like this:_
+      /  
+      src={{picture}}
+      /
+      +-We do it like this:_
+      /
+      :src="picture"
+      /
+      .-->
+      <img :class="gender" :src="picture" :alt="`${firstName} ${lastName}`" />
+      <h1>{{firstName}} {{lastName}}</h1>
+      <h3>Email: {{email}}</h3>
+      <button :class="gender">Get Random User</button>
+    </div>
+
     <!--+-(1-A)-Here We Import Vue.js 3:_-->
-    <script src="https://unpkg.com/vue@next"></script>
-    <!--+-(1-B)-Here We write our Vue.js 3 Code:_-->
-    <script>
-      const helloWorld = {
-        data() {
-          return {
-            name: "Jhon",
-          };
-        },
-      };
-      /**+-(1-C)-This is how we declare our Vue.js "Components":_*/
-      var mountedApp1 = Vue.createApp(helloWorld).mount("#App1");
-      var mountedApp2 = Vue.createApp(helloWorld).mount("#App2");
-    </script>
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+    <!--+-(1-B)-Here We import our Vue.js 3 Code:_-->
+    <script src="app.js"></script>
   </body>
 </html>
