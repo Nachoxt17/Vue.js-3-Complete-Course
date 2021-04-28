@@ -1,27 +1,24 @@
-# Vue Complete Course - Task Tracker
-
-> This is the project from the YouTube crash course
+# tasks-tracker-tutorial-app
 
 ## Project setup
-
 ```
 npm install
 ```
 
-## Run the JSON-Server backend (http://localhost:5000)
-
-```
-npm run backend
-```
-
-## Run the Vue dev server (http://localhost:8080)
-
+### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-## Compiles and minifies for production
-
+### Compiles and minifies for production
 ```
 npm run build
 ```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
