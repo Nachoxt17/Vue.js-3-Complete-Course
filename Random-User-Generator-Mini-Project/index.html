@@ -22,7 +22,12 @@
       <img :class="gender" :src="picture" :alt="`${firstName} ${lastName}`" />
       <h1>{{firstName}} {{lastName}}</h1>
       <h3>Email: {{email}}</h3>
-      <button :class="gender">Get Random User</button>
+      <!--+-(1-H)-We can pass Vue.js Functions inside HTML Buttons like this:_
+      /  
+      v-on:click="***"
+      /
+      .-->
+      <button v-on:click="getUser()" :class="gender">Get Random User</button>
     </div>
 
     <!--+-(1-A)-Here We Import Vue.js 3:_-->
