@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.js 3 Course</title>
+  </head>
+  <body>
+    <!--+-(1-D)-This is how we Insert our Vue.js "Components" in the HTML Website:_-->
+    <div id="App1">Hello {{name}} from App1</div>
+    <div id="App2">Hello {{name}} from App2</div>
+    <!--+-(1-A)-Here We Import Vue.js 3:_-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--+-(1-B)-Here We write our Vue.js 3 Code:_-->
+    <script>
+      const helloWorld = {
+        data() {
+          return {
+            name: "Jhon",
+          };
+        },
+      };
+      /**+-(1-C)-This is how we declare our Vue.js "Components":_*/
+      var mountedApp1 = Vue.createApp(helloWorld).mount("#App1");
+      var mountedApp2 = Vue.createApp(helloWorld).mount("#App2");
+    </script>
+  </body>
+</html>
