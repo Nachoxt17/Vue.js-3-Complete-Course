@@ -1,3 +1,4 @@
+<!--+-Test Deployment version with running "serve -s dist" in the console.-->
 <!--+-Component HTML Part:_-->
 <template>
 <div class="container">
