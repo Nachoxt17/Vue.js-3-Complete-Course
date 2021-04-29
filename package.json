@@ -23,6 +23,20 @@
     "gh-pages": "^2.2.0",
     "prettier": "*"
   },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
