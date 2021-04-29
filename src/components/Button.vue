@@ -18,7 +18,3 @@ export default {
   }
 };
 </script>
-
-<!--+-Component CSS Styles Part:_(Scoped means that THIS styles Only apply for THIS Component)-->
-<style scoped>
-</style>
