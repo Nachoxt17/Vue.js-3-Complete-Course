@@ -1,4 +1,6 @@
-# tasks-tracker-tutorial-app
+# +-Vue.js 3 Tutorial - Tasks Tracker Web App:\_
+
+![Final Result]()
 
 ## Project setup
 
