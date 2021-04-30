@@ -2,6 +2,8 @@
   <footer>
     <p>Copyright &copy; 2021</p>
     <a href="https://www.linkedin.com/in/ignacioceaglio/">Ignacio Ceaglio</a>
+    <br />
+    <router-link to="/about">About</router-link>
   </footer>
 </template>
 
